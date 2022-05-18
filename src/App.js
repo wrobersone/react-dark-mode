@@ -3,6 +3,7 @@ import { GlobalStyles } from './styles/GlobalStyles';
 import styled from 'styled-components';
 import { ThemeProvider } from 'styled-components';
 import Navbar from './components/layout/navbar/Navbar';
+import Hero from './components/sections/hero/Hero';
 
 function App() {
   const [theme, setTheme] = useState('dark');
@@ -15,6 +16,7 @@ function App() {
       <Container>
         <GlobalStyles />
         <Navbar theme={theme} toggleTheme={toggleTheme} />
+        <Hero />
       </Container>
     </ThemeProvider>
   );
